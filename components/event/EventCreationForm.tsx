@@ -166,11 +166,9 @@ export function EventCreationForm({
                   value={timeRange.start}
                   onChange={handleStartTimeChange}
                   onBlur={handleTimeBlur("start")}
-                  className={`pr-8 time-input text-center ${timeErrors.start ? "border-red-500" : ""}`}
+                  className={`time-input text-center ${timeErrors.start ? "border-red-500" : ""}`}
                 />
-                <div className="absolute right-2 top-1/2 transform -translate-y-1/2 pointer-events-none">
-                  <Clock className="h-4 w-4 text-muted-foreground" />
-                </div>
+                {/* Clock icon removed for mobile */}
               </div>
 
               <span className="text-sm font-medium text-muted-foreground">to</span>
@@ -182,11 +180,9 @@ export function EventCreationForm({
                   value={timeRange.end}
                   onChange={handleEndTimeChange}
                   onBlur={handleTimeBlur("end")}
-                  className={`pr-8 time-input text-center ${timeErrors.end ? "border-red-500" : ""}`}
+                  className={`time-input text-center ${timeErrors.end ? "border-red-500" : ""}`}
                 />
-                <div className="absolute right-2 top-1/2 transform -translate-y-1/2 pointer-events-none">
-                  <Clock className="h-4 w-4 text-muted-foreground" />
-                </div>
+                {/* Clock icon removed for mobile */}
               </div>
             </div>
 
