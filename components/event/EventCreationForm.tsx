@@ -157,32 +157,89 @@ export function EventCreationForm({
         {/* Time selection section */}
         <div className="space-y-4">
           {/* Mobile time selection - single row with "to" in between */}
-          <div className="sm:hidden">
+          <div className="sm:hidden space-y-4">
+            <Label className="block text-center mb-2">Time Range</Label>
             <div className="flex items-center justify-center space-x-3">
-              <div className="relative w-[120px]">
-                <Input
-                  id="start-time-mobile"
-                  type="time"
-                  value={timeRange.start}
-                  onChange={handleStartTimeChange}
-                  onBlur={handleTimeBlur("start")}
-                  className={`time-input text-center ${timeErrors.start ? "border-red-500" : ""}`}
-                />
-                {/* Clock icon removed for mobile */}
+              <div className="relative w-[130px] flex flex-col items-end">
+                <div className="flex items-center">
+                  <select
+                    value={timeRange.start.split(":")[0]}
+                    onChange={(e) => {
+                      const [_, minutes] = timeRange.start.split(":")
+                      setTimeRange({ ...timeRange, start: `${e.target.value}:${minutes}` })
+                    }}
+                    className="appearance-none bg-background border rounded-l-md py-2 pl-3 pr-2 text-right focus:outline-none focus:ring-primary focus:border-primary"
+                  >
+                    {Array.from({ length: 24 }, (_, i) => {
+                      const hour = i
+                      const display = hour === 0 || hour === 12 ? 12 : hour % 12
+                      return (
+                        <option key={hour} value={hour.toString().padStart(2, "0")}>
+                          {display}
+                        </option>
+                      )
+                    })}
+                  </select>
+                  <span className="mx-0.5">:</span>
+                  <select
+                    value={timeRange.start.split(":")[1]}
+                    onChange={(e) => {
+                      const [hours, _] = timeRange.start.split(":")
+                      setTimeRange({ ...timeRange, start: `${hours}:${e.target.value}` })
+                    }}
+                    className="appearance-none bg-background border-y border-r rounded-r-md py-2 pl-1 pr-2 focus:outline-none focus:ring-primary focus:border-primary"
+                  >
+                    <option value="00">00</option>
+                    <option value="15">15</option>
+                    <option value="30">30</option>
+                    <option value="45">45</option>
+                  </select>
+                  <div className="ml-1 text-xs font-medium">
+                    {Number.parseInt(timeRange.start.split(":")[0]) < 12 ? "AM" : "PM"}
+                  </div>
+                </div>
               </div>
 
-              <span className="text-sm font-medium text-muted-foreground">to</span>
+              <span className="text-sm font-medium text-muted-foreground px-1">to</span>
 
-              <div className="relative w-[120px]">
-                <Input
-                  id="end-time-mobile"
-                  type="time"
-                  value={timeRange.end}
-                  onChange={handleEndTimeChange}
-                  onBlur={handleTimeBlur("end")}
-                  className={`time-input text-center ${timeErrors.end ? "border-red-500" : ""}`}
-                />
-                {/* Clock icon removed for mobile */}
+              <div className="relative w-[130px] flex flex-col items-start">
+                <div className="flex items-center">
+                  <div className="mr-1 text-xs font-medium">
+                    {Number.parseInt(timeRange.end.split(":")[0]) < 12 ? "AM" : "PM"}
+                  </div>
+                  <select
+                    value={timeRange.end.split(":")[0]}
+                    onChange={(e) => {
+                      const [_, minutes] = timeRange.end.split(":")
+                      setTimeRange({ ...timeRange, end: `${e.target.value}:${minutes}` })
+                    }}
+                    className="appearance-none bg-background border rounded-l-md py-2 pl-3 pr-2 text-left focus:outline-none focus:ring-primary focus:border-primary"
+                  >
+                    {Array.from({ length: 24 }, (_, i) => {
+                      const hour = i
+                      const display = hour === 0 || hour === 12 ? 12 : hour % 12
+                      return (
+                        <option key={hour} value={hour.toString().padStart(2, "0")}>
+                          {display}
+                        </option>
+                      )
+                    })}
+                  </select>
+                  <span className="mx-0.5">:</span>
+                  <select
+                    value={timeRange.end.split(":")[1]}
+                    onChange={(e) => {
+                      const [hours, _] = timeRange.end.split(":")
+                      setTimeRange({ ...timeRange, end: `${hours}:${e.target.value}` })
+                    }}
+                    className="appearance-none bg-background border-y border-r rounded-r-md py-2 pl-1 pr-2 focus:outline-none focus:ring-primary focus:border-primary"
+                  >
+                    <option value="00">00</option>
+                    <option value="15">15</option>
+                    <option value="30">30</option>
+                    <option value="45">45</option>
+                  </select>
+                </div>
               </div>
             </div>
 
