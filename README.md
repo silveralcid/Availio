@@ -31,7 +31,7 @@
 <br />
 <div align="center">
 
-<h3 align="center">availio</h3>
+<h3 align="center">Availio</h3>
 
 [![Support me on Patreon](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Fshieldsio-patreon.vercel.app%2Fapi%3Fusername%3Dsilversparkstudio%26type%3Dpatrons&style=plastic)](https://patreon.com/silversparkstudio)
 
