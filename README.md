@@ -39,7 +39,7 @@
 Availio was born out of a need for a modern, user-friendly alternative to group scheduling tools like When2Meet. Designed to remove the friction from planning meetings and events, Availio focuses on simplicity, real-time collaboration, and visual clarity—making group scheduling a breeze, not a chore. Whether you're coordinating with friends, teammates, or collaborators, Availio helps you find the perfect time, faster. 
     <br />
     <br />
-    <a href="https://youtu.be/RIK9aqslzko">View Demo</a>
+    <a href="https://www.availio.app/">View Demo</a>
     ·
     <a href="https://github.com/silveralcid/availio/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
     ·
