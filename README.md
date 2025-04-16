@@ -31,25 +31,25 @@
 <br />
 <div align="center">
 
-<h3 align="center">RSSence</h3>
+<h3 align="center">availio</h3>
 
 [![Support me on Patreon](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Fshieldsio-patreon.vercel.app%2Fapi%3Fusername%3Dsilversparkstudio%26type%3Dpatrons&style=plastic)](https://patreon.com/silversparkstudio)
 
   <p align="center">
-RSSence was created in response to a request on r/SomebodyMakeThis, bringing to life the idea of a beautifully animated, fullscreen RSS visualizer. Inspired by classic RSS screensavers from the past, RSSence transforms your screen into a dynamic news hub, displaying headlines in a visually engaging way—think flipping cards, smooth transitions, and modern design. It’s an open-source, free tool designed for anyone who wants to bring their favorite feeds to life, whether on a TV, monitor, or secondary display.  
+availio was created in response to a request on r/SomebodyMakeThis, bringing to life the idea of a beautifully animated, fullscreen RSS visualizer. Inspired by classic RSS screensavers from the past, availio transforms your screen into a dynamic news hub, displaying headlines in a visually engaging way—think flipping cards, smooth transitions, and modern design. It’s an open-source, free tool designed for anyone who wants to bring their favorite feeds to life, whether on a TV, monitor, or secondary display.  
     <br />
     <br />
     <a href="https://youtu.be/RIK9aqslzko">View Demo</a>
     ·
-    <a href="https://github.com/silveralcid/rssence/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
+    <a href="https://github.com/silveralcid/availio/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
     ·
-    <a href="https://github.com/silveralcid/rssence/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
+    <a href="https://github.com/silveralcid/availio/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
   </p>
 </div>
 
 <p align="center">
-  <a href="https://github.com/silveralcid/RSSence/blob/main/demo.gif">
-    <img src="https://github.com/silveralcid/RSSence/raw/main/demo.gif" alt="Product Name Screen Shot">
+  <a href="https://github.com/silveralcid/availio/blob/main/demo.gif">
+    <img src="https://github.com/silveralcid/availio/raw/main/demo.gif" alt="Product Name Screen Shot">
   </a>
 </p>
 
@@ -79,7 +79,7 @@ RSSence was created in response to a request on r/SomebodyMakeThis, bringing to 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-With the resurgence of RSS as a powerful, independent way to follow the web, RSSence aims to make consuming news both functional and aesthetically pleasing. Whether you're working, relaxing, or just want an elegant, ever-changing display of updates, RSSence turns idle screens into something useful and beautiful.
+With the resurgence of RSS as a powerful, independent way to follow the web, availio aims to make consuming news both functional and aesthetically pleasing. Whether you're working, relaxing, or just want an elegant, ever-changing display of updates, availio turns idle screens into something useful and beautiful.
 
 - **Effortless Feed Management:** Quickly add, remove, and validate RSS feeds—with one-click example feeds for top sources.
 - **Tailored Display Options:** Adjust content size, toggle images, set custom card durations, and choose sort orders for a personalized view.
@@ -111,7 +111,7 @@ Get in touch with us at [hello@silverspark.studio](mailto:hello@silverspark.stud
 
 Have an idea for a cool feature? Let us know!
 
-Add an feature or issue request, see [open issues](https://github.com/silveralcid/RSSence/issues) for a full list of proposed features (and known issues).
+Add an feature or issue request, see [open issues](https://github.com/silveralcid/availio/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -135,8 +135,8 @@ Don't forget to give the project a star! Thanks again!
 
 ### Top contributors:
 
-<a href="https://github.com/silveralcid/RSSence/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=silveralcid/rssence" alt="contrib.rocks image" />
+<a href="https://github.com/silveralcid/availio/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=silveralcid/availio" alt="contrib.rocks image" />
 </a>
 
 
@@ -168,16 +168,16 @@ Silver Alcid - [@silveralcid](https://twitter.com/silveralcid) | [silver@silvers
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/silveralcid/rssence.svg?style=for-the-badge
-[contributors-url]: https://github.com/silveralcid/rssence/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/silveralcid/rssence.svg?style=for-the-badge
-[forks-url]: https://github.com/silveralcid/rssence/network/members
-[stars-shield]: https://img.shields.io/github/stars/silveralcid/rssence.svg?style=for-the-badge
-[stars-url]: https://github.com/silveralcid/rssence/stargazers
-[issues-shield]: https://img.shields.io/github/issues/silveralcid/rssence.svg?style=for-the-badge
-[issues-url]: https://github.com/silveralcid/rssence/issues
-[license-shield]: https://img.shields.io/github/license/silveralcid/rssence.svg?style=for-the-badge
-[license-url]: https://github.com/silveralcid/rssence/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/silveralcid/availio.svg?style=for-the-badge
+[contributors-url]: https://github.com/silveralcid/availio/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/silveralcid/availio.svg?style=for-the-badge
+[forks-url]: https://github.com/silveralcid/availio/network/members
+[stars-shield]: https://img.shields.io/github/stars/silveralcid/availio.svg?style=for-the-badge
+[stars-url]: https://github.com/silveralcid/availio/stargazers
+[issues-shield]: https://img.shields.io/github/issues/silveralcid/availio.svg?style=for-the-badge
+[issues-url]: https://github.com/silveralcid/availio/issues
+[license-shield]: https://img.shields.io/github/license/silveralcid/availio.svg?style=for-the-badge
+[license-url]: https://github.com/silveralcid/availio/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/silveralcid
 [product-screenshot]: images/screenshot.png
