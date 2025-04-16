@@ -36,7 +36,7 @@
 [![Support me on Patreon](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Fshieldsio-patreon.vercel.app%2Fapi%3Fusername%3Dsilversparkstudio%26type%3Dpatrons&style=plastic)](https://patreon.com/silversparkstudio)
 
   <p align="center">
-availio was created in response to a request on r/SomebodyMakeThis, bringing to life the idea of a beautifully animated, fullscreen RSS visualizer. Inspired by classic RSS screensavers from the past, availio transforms your screen into a dynamic news hub, displaying headlines in a visually engaging way—think flipping cards, smooth transitions, and modern design. It’s an open-source, free tool designed for anyone who wants to bring their favorite feeds to life, whether on a TV, monitor, or secondary display.  
+Availio was born out of a need for a modern, user-friendly alternative to group scheduling tools like When2Meet. Designed to remove the friction from planning meetings and events, Availio focuses on simplicity, real-time collaboration, and visual clarity—making group scheduling a breeze, not a chore. Whether you're coordinating with friends, teammates, or collaborators, Availio helps you find the perfect time, faster.  
     <br />
     <br />
     <a href="https://youtu.be/RIK9aqslzko">View Demo</a>
@@ -160,7 +160,7 @@ Silver Alcid - [@silveralcid](https://twitter.com/silveralcid) | [silver@silvers
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* /u/mulcahey
+* K.F.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
