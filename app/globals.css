@@ -239,3 +239,26 @@ input[type="time"] {
 input[type="time"]::-ms-clear {
   display: none;
 }
+
+/* Add these styles to improve the time input appearance on mobile devices */
+
+/* Improve time input appearance on mobile */
+@media (max-width: 640px) {
+  input[type="time"] {
+    font-size: 16px; /* Prevent iOS zoom on focus */
+    text-align: center;
+    padding-right: 0.5rem;
+  }
+
+  /* Center the time picker dropdown on iOS */
+  input[type="time"]::-webkit-datetime-edit {
+    text-align: center;
+  }
+
+  /* Improve tap target size */
+  input[type="time"] {
+    min-height: 44px;
+  }
+}
+
+/* Add these styles after the existing time input styles */

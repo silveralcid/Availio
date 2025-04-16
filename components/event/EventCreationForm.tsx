@@ -154,55 +154,57 @@ export function EventCreationForm({
           <MultiDateCalendar selectedDates={selectedDates} onDateSelect={setSelectedDates} />
         </div>
 
-        <div className="grid grid-cols-2 gap-4">
-          <div className="space-y-2">
-            <Label htmlFor="start-time" className="block text-center">
-              Start Time
-            </Label>
-            <div className="relative">
-              <Input
-                id="start-time"
-                type="time"
-                value={timeRange.start}
-                onChange={handleStartTimeChange}
-                onBlur={handleTimeBlur("start")}
-                className={`pr-8 time-input ${timeErrors.start ? "border-red-500" : ""}`}
-              />
-              <div className="absolute right-2 top-1/2 transform -translate-y-1/2 pointer-events-none">
-                <Clock className="h-4 w-4 text-muted-foreground" />
+        <div className="space-y-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div className="space-y-2 flex flex-col items-center sm:items-start">
+              <Label htmlFor="start-time" className="self-center sm:self-start">
+                Start Time
+              </Label>
+              <div className="relative w-full max-w-[140px]">
+                <Input
+                  id="start-time"
+                  type="time"
+                  value={timeRange.start}
+                  onChange={handleStartTimeChange}
+                  onBlur={handleTimeBlur("start")}
+                  className={`pr-8 time-input text-center ${timeErrors.start ? "border-red-500" : ""}`}
+                />
+                <div className="absolute right-2 top-1/2 transform -translate-y-1/2 pointer-events-none hidden sm:block">
+                  <Clock className="h-4 w-4 text-muted-foreground" />
+                </div>
               </div>
+              {timeErrors.start && (
+                <div className="text-xs text-red-500 flex items-center mt-1 text-center sm:text-left">
+                  <AlertCircle className="h-3 w-3 mr-1 flex-shrink-0" />
+                  <span>Time must be in 15-minute increments</span>
+                </div>
+              )}
             </div>
-            {timeErrors.start && (
-              <div className="text-xs text-red-500 flex items-center mt-1">
-                <AlertCircle className="h-3 w-3 mr-1" />
-                Time must be in 15-minute increments (00, 15, 30, 45)
-              </div>
-            )}
-          </div>
 
-          <div className="space-y-2">
-            <Label htmlFor="end-time" className="block text-center">
-              End Time
-            </Label>
-            <div className="relative">
-              <Input
-                id="end-time"
-                type="time"
-                value={timeRange.end}
-                onChange={handleEndTimeChange}
-                onBlur={handleTimeBlur("end")}
-                className={`pr-8 time-input ${timeErrors.end ? "border-red-500" : ""}`}
-              />
-              <div className="absolute right-2 top-1/2 transform -translate-y-1/2 pointer-events-none">
-                <Clock className="h-4 w-4 text-muted-foreground" />
+            <div className="space-y-2 flex flex-col items-center sm:items-start">
+              <Label htmlFor="end-time" className="self-center sm:self-start">
+                End Time
+              </Label>
+              <div className="relative w-full max-w-[140px]">
+                <Input
+                  id="end-time"
+                  type="time"
+                  value={timeRange.end}
+                  onChange={handleEndTimeChange}
+                  onBlur={handleTimeBlur("end")}
+                  className={`pr-8 time-input text-center ${timeErrors.end ? "border-red-500" : ""}`}
+                />
+                <div className="absolute right-2 top-1/2 transform -translate-y-1/2 pointer-events-none hidden sm:block">
+                  <Clock className="h-4 w-4 text-muted-foreground" />
+                </div>
               </div>
+              {timeErrors.end && (
+                <div className="text-xs text-red-500 flex items-center mt-1 text-center sm:text-left">
+                  <AlertCircle className="h-3 w-3 mr-1 flex-shrink-0" />
+                  <span>Time must be in 15-minute increments</span>
+                </div>
+              )}
             </div>
-            {timeErrors.end && (
-              <div className="text-xs text-red-500 flex items-center mt-1">
-                <AlertCircle className="h-3 w-3 mr-1" />
-                Time must be in 15-minute increments (00, 15, 30, 45)
-              </div>
-            )}
           </div>
         </div>
 
