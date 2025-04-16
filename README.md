@@ -36,7 +36,7 @@
 [![Support me on Patreon](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Fshieldsio-patreon.vercel.app%2Fapi%3Fusername%3Dsilversparkstudio%26type%3Dpatrons&style=plastic)](https://patreon.com/silversparkstudio)
 
   <p align="center">
-Availio was born out of a need for a modern, user-friendly alternative to group scheduling tools like When2Meet. Designed to remove the friction from planning meetings and events, Availio focuses on simplicity, real-time collaboration, and visual clarity—making group scheduling a breeze, not a chore. Whether you're coordinating with friends, teammates, or collaborators, Availio helps you find the perfect time, faster.  
+Availio was born out of a need for a modern, user-friendly alternative to group scheduling tools like When2Meet. Designed to remove the friction from planning meetings and events, Availio focuses on simplicity, real-time collaboration, and visual clarity—making group scheduling a breeze, not a chore. Whether you're coordinating with friends, teammates, or collaborators, Availio helps you find the perfect time, faster. 
     <br />
     <br />
     <a href="https://youtu.be/RIK9aqslzko">View Demo</a>
@@ -79,15 +79,14 @@ Availio was born out of a need for a modern, user-friendly alternative to group 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-With the resurgence of RSS as a powerful, independent way to follow the web, availio aims to make consuming news both functional and aesthetically pleasing. Whether you're working, relaxing, or just want an elegant, ever-changing display of updates, availio turns idle screens into something useful and beautiful.
+Whether you're scheduling a D&D session, planning a team meeting, or trying to find time for a virtual hangout, Availio is the fast, frustration-free way to get everyone on the same page.
 
-- **Effortless Feed Management:** Quickly add, remove, and validate RSS feeds—with one-click example feeds for top sources.
-- **Tailored Display Options:** Adjust content size, toggle images, set custom card durations, and choose sort orders for a personalized view.
-- **Versatile Appearance & Themes:** Switch between Light, Dark, or System themes, and select a minimalist Vibe Mode for a clean look.
-- **Dynamic Background Customization:** Use custom background images and choose from fun particle effects like bubbles, confetti, stars, and seasonal leaves.
-- **Integrated Clock & Navigation:** Display a multi-timezone clock, and enjoy intuitive keyboard and on-screen navigation, automatic transitions, and fullscreen toggle.
-- **Responsive & Feature-Rich Interface:** Experience a mobile-friendly design with error handling, animated transitions, and optimized rendering for smooth performance.
-
+- **Instant Event Creation:** No login or sign-up required. Just enter your event details and share a link—you're good to go.  
+- **Heatmap-Based Availability:** Easily visualize group availability with an intuitive, real-time heatmap that gets clearer as more people respond.  
+- **Live Collaboration:** Watch availability update live as participants submit their responses—no need to refresh the page or wait for emails.  
+- **Mobile-Friendly & Lightweight:** Designed to work seamlessly on both desktop and mobile with a minimal, responsive interface.  
+- **Private & Open Source:** Built with privacy in mind—no tracking, no ads. And because it's open source, anyone can self-host, contribute, or fork the project.  
+- **Accessible Design:** Keyboard and screen reader friendly, with a focus on ease of use for everyone.  
 
 ### Let’s spark something great together!
 
