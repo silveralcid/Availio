@@ -19,7 +19,7 @@ export default function Header() {
             How It Works
           </a>
           <Link
-            href="https://github.com/silveralcid"
+            href="https://github.com/silveralcid/availio/issues"
             target="_blank"
             rel="noopener noreferrer"
             className="text-sm font-medium hover:text-primary transition-colors flex items-center gap-1.5"
@@ -32,7 +32,7 @@ export default function Header() {
         {/* Mobile navigation */}
         <div className="flex items-center gap-2">
           <Link
-            href="https://github.com/silveralcid"
+            href="https://github.com/silveralcid/availio/issues"
             target="_blank"
             rel="noopener noreferrer"
             className="md:hidden flex items-center justify-center h-9 w-9 rounded-full hover:bg-muted transition-colors"

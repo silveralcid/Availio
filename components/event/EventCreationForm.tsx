@@ -154,10 +154,55 @@ export function EventCreationForm({
           <MultiDateCalendar selectedDates={selectedDates} onDateSelect={setSelectedDates} />
         </div>
 
+        {/* Time selection section */}
         <div className="space-y-4">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div className="space-y-2 flex flex-col items-center sm:items-start">
-              <Label htmlFor="start-time" className="self-center sm:self-start">
+          {/* Mobile time selection - single row with "to" in between */}
+          <div className="sm:hidden">
+            <div className="flex items-center justify-center space-x-3">
+              <div className="relative w-[120px]">
+                <Input
+                  id="start-time-mobile"
+                  type="time"
+                  value={timeRange.start}
+                  onChange={handleStartTimeChange}
+                  onBlur={handleTimeBlur("start")}
+                  className={`pr-8 time-input text-center ${timeErrors.start ? "border-red-500" : ""}`}
+                />
+                <div className="absolute right-2 top-1/2 transform -translate-y-1/2 pointer-events-none">
+                  <Clock className="h-4 w-4 text-muted-foreground" />
+                </div>
+              </div>
+
+              <span className="text-sm font-medium text-muted-foreground">to</span>
+
+              <div className="relative w-[120px]">
+                <Input
+                  id="end-time-mobile"
+                  type="time"
+                  value={timeRange.end}
+                  onChange={handleEndTimeChange}
+                  onBlur={handleTimeBlur("end")}
+                  className={`pr-8 time-input text-center ${timeErrors.end ? "border-red-500" : ""}`}
+                />
+                <div className="absolute right-2 top-1/2 transform -translate-y-1/2 pointer-events-none">
+                  <Clock className="h-4 w-4 text-muted-foreground" />
+                </div>
+              </div>
+            </div>
+
+            {/* Mobile validation errors */}
+            {(timeErrors.start || timeErrors.end) && (
+              <div className="text-xs text-red-500 flex items-center justify-center mt-2">
+                <AlertCircle className="h-3 w-3 mr-1 flex-shrink-0" />
+                <span>Time must be in 15-minute increments</span>
+              </div>
+            )}
+          </div>
+
+          {/* Desktop time selection - with labels */}
+          <div className="hidden sm:grid sm:grid-cols-2 sm:gap-4">
+            <div className="space-y-2 flex flex-col items-start">
+              <Label htmlFor="start-time" className="self-start">
                 Start Time
               </Label>
               <div className="relative w-full max-w-[140px]">
@@ -169,20 +214,20 @@ export function EventCreationForm({
                   onBlur={handleTimeBlur("start")}
                   className={`pr-8 time-input text-center ${timeErrors.start ? "border-red-500" : ""}`}
                 />
-                <div className="absolute right-2 top-1/2 transform -translate-y-1/2 pointer-events-none hidden sm:block">
+                <div className="absolute right-2 top-1/2 transform -translate-y-1/2 pointer-events-none">
                   <Clock className="h-4 w-4 text-muted-foreground" />
                 </div>
               </div>
               {timeErrors.start && (
-                <div className="text-xs text-red-500 flex items-center mt-1 text-center sm:text-left">
+                <div className="text-xs text-red-500 flex items-center mt-1 text-left">
                   <AlertCircle className="h-3 w-3 mr-1 flex-shrink-0" />
                   <span>Time must be in 15-minute increments</span>
                 </div>
               )}
             </div>
 
-            <div className="space-y-2 flex flex-col items-center sm:items-start">
-              <Label htmlFor="end-time" className="self-center sm:self-start">
+            <div className="space-y-2 flex flex-col items-start">
+              <Label htmlFor="end-time" className="self-start">
                 End Time
               </Label>
               <div className="relative w-full max-w-[140px]">
@@ -194,12 +239,12 @@ export function EventCreationForm({
                   onBlur={handleTimeBlur("end")}
                   className={`pr-8 time-input text-center ${timeErrors.end ? "border-red-500" : ""}`}
                 />
-                <div className="absolute right-2 top-1/2 transform -translate-y-1/2 pointer-events-none hidden sm:block">
+                <div className="absolute right-2 top-1/2 transform -translate-y-1/2 pointer-events-none">
                   <Clock className="h-4 w-4 text-muted-foreground" />
                 </div>
               </div>
               {timeErrors.end && (
-                <div className="text-xs text-red-500 flex items-center mt-1 text-center sm:text-left">
+                <div className="text-xs text-red-500 flex items-center mt-1 text-left">
                   <AlertCircle className="h-3 w-3 mr-1 flex-shrink-0" />
                   <span>Time must be in 15-minute increments</span>
                 </div>
