@@ -33,9 +33,9 @@
 
 <h3 align="center">Availio</h3>
 
-<a href="https://www.producthunt.com/posts/availio-effortless-scheduling?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-availio&#0045;effortless&#0045;scheduling" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=961512&theme=light&t=1746475528723" alt="Availio&#0032;&#0045;&#0032;Effortless&#0032;Scheduling - Scheduling&#0032;made&#0032;visual&#0032;and&#0032;easy | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
-
 [![Support me on Patreon](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Fshieldsio-patreon.vercel.app%2Fapi%3Fusername%3Dsilversparkstudio%26type%3Dpatrons&style=plastic)](https://patreon.com/silversparkstudio)
+
+<a href="https://www.producthunt.com/posts/availio-effortless-scheduling?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-availio&#0045;effortless&#0045;scheduling" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=961512&theme=light&t=1746475528723" alt="Availio&#0032;&#0045;&#0032;Effortless&#0032;Scheduling - Scheduling&#0032;made&#0032;visual&#0032;and&#0032;easy | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
 
   <p align="center">
 Availio was born out of a need for a modern, user-friendly alternative to group scheduling tools like When2Meet. Designed to remove the friction from planning meetings and events, Availio focuses on simplicity, real-time collaboration, and visual clarity—making group scheduling a breeze, not a chore. Whether you're coordinating with friends, teammates, or collaborators, Availio helps you find the perfect time, faster. 
