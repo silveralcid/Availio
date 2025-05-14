@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Calendar, Clock, Users } from "lucide-react"
+import { Calendar, Clock, Users, BarChart2 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { AvailabilityGrid } from "@/components/AvailabilityGrid"
@@ -117,8 +117,11 @@ export function AvailabilitySubmitted({
       </div>
 
       <div className="flex flex-col gap-4 items-center">
-        <Button asChild>
-          <Link href={`/event/${eventId}/results`}>View Detailed Results</Link>
+        <Button asChild size="lg" className="gap-2">
+          <Link href={`/event/${eventId}/results?submitted=true`}>
+            <BarChart2 className="h-4 w-4" />
+            View Detailed Results
+          </Link>
         </Button>
 
         <Link href="/" className="text-sm text-primary hover:underline">

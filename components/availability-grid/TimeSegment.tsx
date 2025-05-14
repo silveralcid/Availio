@@ -55,6 +55,19 @@ export function TimeSegment({
     }
   }
 
+  // Ensure mouse events work properly on desktop
+  const handleMouseEnter = () => {
+    if (!readOnly && !isTouchDevice && onMouseEnter) {
+      onMouseEnter()
+    }
+  }
+
+  const handleMouseDown = (e: React.MouseEvent) => {
+    if (!readOnly && !isTouchDevice && onMouseDown) {
+      onMouseDown(e)
+    }
+  }
+
   return (
     <motion.div
       key={`quarter-${hourIndex}-${quarterIndex}-${dateIndex}`}
@@ -74,9 +87,9 @@ export function TimeSegment({
         duration: 0.2,
         ease: "easeOut",
       }}
-      onMouseDown={!readOnly && !isTouchDevice ? onMouseDown : undefined}
+      onMouseDown={!readOnly && !isTouchDevice ? handleMouseDown : undefined}
       onTouchStart={!readOnly ? handleTouchStart : undefined}
-      onMouseEnter={!readOnly && !isTouchDevice ? onMouseEnter : undefined} // Disable mouseEnter on mobile
+      onMouseEnter={handleMouseEnter} // Use our custom handler
       data-hour-index={hourIndex}
       data-quarter-index={quarterIndex}
       data-date-index={dateIndex}

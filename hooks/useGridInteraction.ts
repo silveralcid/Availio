@@ -61,7 +61,7 @@ export function useGridInteraction({
       )
 
       // Set as touch device if either condition is true
-      setIsTouchDevice(isTouchCapable || isMobileUserAgent)
+      setIsTouchDevice(isTouchCapable && isMobileUserAgent)
     }
 
     detectTouchDevice()
@@ -603,6 +603,30 @@ export function useGridInteraction({
 
       if (isDragging) {
         updateAutoScroll(e.clientX, e.clientY)
+
+        // Find the element under the mouse pointer
+        const elementUnderMouse = document.elementFromPoint(e.clientX, e.clientY)
+        if (elementUnderMouse) {
+          // Check if the element or its parent has data attributes for hour, quarter, and date indices
+          const cellElement = elementUnderMouse.closest("[data-hour-index][data-quarter-index][data-date-index]")
+          if (cellElement) {
+            const hourIndex = Number.parseInt(cellElement.getAttribute("data-hour-index") || "0", 10)
+            const quarterIndex = Number.parseInt(cellElement.getAttribute("data-quarter-index") || "0", 10)
+            const dateIndex = Number.parseInt(cellElement.getAttribute("data-date-index") || "0", 10)
+
+            // Update current drag coordinates
+            setDragCurrentCoords({ hourIndex, quarterIndex, dateIndex })
+
+            // Get the cell index
+            const cellIndex = getCellIndex(hourIndex, quarterIndex, dateIndex)
+            const isSelected = selectedCells.includes(cellIndex)
+
+            // Apply selection based on drag mode
+            if ((dragMode === "select" && !isSelected) || (dragMode === "deselect" && isSelected)) {
+              onCellSelect?.(cellIndex)
+            }
+          }
+        }
       } else if (swipeStartRef.current) {
         handleSwipeMove(e.clientX, e.clientY)
       }
