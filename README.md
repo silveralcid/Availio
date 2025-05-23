@@ -153,6 +153,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 ## Contact
 
 Silver Alcid - [@silveralcid](https://twitter.com/silveralcid) | [silver@silverspark.studio](mailto:silver@silverspark.studio)
+Channing Brown - [chanware](https://github.com/chanware) | [silver@silverspark.studio](mailto:chanbrown.exe@gmail.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
