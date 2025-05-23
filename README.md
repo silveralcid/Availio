@@ -152,7 +152,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Silver Alcid - [@silveralcid](https://twitter.com/silveralcid) | [silver@silverspark.studio](mailto:silver@silverspark.studio)
+Silver Alcid - [@silveralcid](https://www.linkedin.com/in/silveralcid/) | [silver@silverspark.studio](mailto:silver@silverspark.studio)
 
 Channing Brown - [chanware](https://github.com/chanware) | [silver@silverspark.studio](mailto:chanbrown.exe@gmail.com)
 
