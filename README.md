@@ -90,14 +90,6 @@ Whether you're scheduling a D&D session, planning a team meeting, or trying to f
 - **Private & Open Source:** Built with privacy in mind—no tracking, no ads. And because it's open source, anyone can self-host, contribute, or fork the project.  
 - **Accessible Design:** Keyboard and screen reader friendly, with a focus on ease of use for everyone.  
 
-### Let’s spark something great together!
-
-Got a brilliant idea but no way to build it? Let’s make it happen! At [Silver Spark Studio](https://silverspark.studio/), we’re a fresh software development agency kicking off our journey by giving back. We’re looking for exciting micro-SaaS ideas—and if they benefit the general public, we’ll bring them to life for free or at cost. Best of all, everything we create will be open-source, so your idea can grow and thrive. 
-
-Get in touch with us at [hello@silverspark.studio](mailto:hello@silverspark.studio)!
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 ### Built With
 [![Next][Next.js]][Next-url]
 [![React][React.js]][React-url]
@@ -152,9 +144,9 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Silver Alcid - [@silveralcid](https://www.linkedin.com/in/silveralcid/) | [silver@silverspark.studio](mailto:silver@silverspark.studio)
+Silver Alcid - [@silveralcid](https://www.linkedin.com/in/silveralcid/) | [silver@sparkware.solutions](mailto:silver@sparkware.solutions)
 
-Channing Brown - [chanware](https://github.com/chanware) | [silver@silverspark.studio](mailto:chanbrown.exe@gmail.com)
+Channing Brown - [chanware](https://github.com/chanware) | [chanbrown.exe@gmail.com](mailto:chanbrown.exe@gmail.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
