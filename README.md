@@ -146,7 +146,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Silver Alcid - [@silveralcid](https://www.linkedin.com/in/silveralcid/) | [silver@sparkware.solutions](mailto:silver@sparkware.solutions)
 
-Channing Brown - [chanware](https://github.com/chanware) | [chanbrown.exe@gmail.com](mailto:chanbrown.exe@gmail.com)
+Channing Brown - [@chanware](https://github.com/chanware) | [chanbrown.exe@gmail.com](mailto:chanbrown.exe@gmail.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
